@@ -1,8 +1,8 @@
 {
-	"name": "farfly",
+	"name": "NashDom",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://spondan.com/react/farfly",
+	"homepage": "https://nashdom.app",
 	"dependencies": {
 		"axios": "^0.18.0",
 		"bootstrap": "^4.2.1",
