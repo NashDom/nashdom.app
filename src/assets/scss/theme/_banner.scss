@@ -1,0 +1,940 @@
+// =================================== //
+//  Start Main Version Banner Styles//
+// =================================== //
+.banner-area {
+	@media (max-width: 991px) {
+		background-position: left;
+	}
+	.container-fluid {
+		padding-left: 20%;
+		@media (max-width: 1680px) {
+			max-width: 1140px;
+			padding-left: 15px;
+		}
+		@media (max-width: 1199px) {
+			max-width: 960px;
+		}
+		@media (max-width: 991px) {
+			max-width: 720px;
+		}
+	}
+	.banner-content {
+		@media (max-width: 1440px) {
+			margin-top: 150px;
+		}
+		@media (max-width: 991px) {
+			margin-top: 180px;
+		}
+		h1 {
+			color: $white;
+			margin-bottom: 30px;
+			font-weight: 700;
+			@media (max-width: 1199px) {
+				font-size: 32px;
+			}
+			@media (max-width: 991px) {
+				font-size: 40px;
+			}
+		}
+		p {
+			color: $white;
+			max-width: 410px;
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+		.video-popup {
+			margin-top: 20px;
+		}
+	}
+	.banner-device {
+		margin-top: 120px;
+		padding-left: 70px;
+		@media (max-width: 1440px) {
+			text-align: center;
+			margin-top: 150px;
+		}
+		.banner-img1 {
+			top: 100px;
+			@media (max-width: 1440px) {
+				top: 50px;
+			}
+		}
+		.banner-img2 {
+			top: 100px;
+			left: -100px;
+			@media (max-width: 1440px) {
+				top: 70px;
+				left: -70px;
+			}
+		}
+		.banner-img3 {
+		}
+		.banner-img4 {
+			top: -100px;
+			@media (max-width: 1440px) {
+				top: -50px;
+			}
+		}
+		.banner-img {
+			width: 40%;
+			position: relative;
+			@media (max-width: 1680px) {
+				width: 49%;
+			}
+			@media (max-width: 1440px) {
+				width: 40%;
+			}
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+		img {
+			width: 55%;
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+	.shapes {
+		@media (max-width: 768px) {
+			display: none;
+		}
+		.shape {
+			position: absolute;
+			opacity: .4;
+			&.shape1 {
+				width: 70px;
+				height: 81px;
+				background: url(../img/banner/shapes/shape1.png) no-repeat;
+				top: 25%;
+				left: 0%;
+			}
+			&.shape2 {
+				width: 58px;
+				height: 57px;
+				background: url(../img/banner/shapes/shape2.png) no-repeat;
+				top: 82%;
+				left: 8%;
+			}
+			&.shape3 {
+				width: 23px;
+				height: 24px;
+				background: url(../img/banner/shapes/shape14.png) no-repeat;
+				top: 56%;
+				left: 13%;
+			}
+			&.shape4 {
+				width: 23px;
+				height: 24px;
+				background: url(../img/banner/shapes/shape4.png) no-repeat;
+				top: 16%;
+				left: 10%;
+			}
+			&.shape5 {
+				width: 20px;
+				height: 20px;
+				background: url(../img/banner/shapes/shape5.png) no-repeat;
+				top: 42%;
+				left: 8%;
+			}
+			&.shape6 {
+				width: 22px;
+				height: 24px;
+				background: url(../img/banner/shapes/shape6.png) no-repeat;
+				top: 20%;
+				left: 82%;
+			}
+			&.shape7 {
+				width: 60px;
+				height: 66px;
+				background: url(../img/banner/shapes/shape7.png) no-repeat;
+				top: 22%;
+				left: 23%;
+			}
+			&.shape8 {
+				width: 33px;
+				height: 34px;
+				background: url(../img/banner/shapes/shape8.png) no-repeat;
+				top: 49%;
+				left: 44%;
+			}
+			&.shape9 {
+				width: 40px;
+				height: 42px;
+				background: url(../img/banner/shapes/shape9.png) no-repeat;
+				top: 11%;
+				left: 96%;
+			}
+			&.shape10 {
+				width: 57px;
+				height: 59px;
+				background: url(../img/banner/shapes/shape10.png) no-repeat;
+				top: 23%;
+				left: 67%;
+			}
+			&.shape11 {
+				width: 78px;
+				height: 80px;
+				background: url(../img/banner/shapes/shape11.png) no-repeat;
+				top: 20%;
+				left: 59%;
+			}
+			&.shape12 {
+				width: 20px;
+				height: 19px;
+				background: url(../img/banner/shapes/shape12.png) no-repeat;
+				top: 23%;
+				left: 54%;
+			}
+			&.shape13 {
+				width: 20px;
+				height: 20px;
+				background: url(../img/banner/shapes/shape13.png) no-repeat;
+				top: 38%;
+				left: 85%;
+			}
+		}
+	}
+}
+
+// =================================== //
+//  End Main Version Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version Common Banner Styles//
+// =================================== //
+
+.version2,
+.version3 {
+	.banner-device {
+		margin-top: 90px;
+	}
+}
+
+.version10,
+.version11,
+.version12 {
+	.banner-area {
+		.owl-dots {
+			position: absolute;
+			left: 50%;
+			bottom: -40%;
+			@include transform(translateX(-50%));
+			button {
+				height: 15px;
+				width: 15px;
+				background: #a6a6a6;
+				border-radius: 50%;
+				margin: 10px;
+				&.active {
+					background: $primary-color2;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+			@media (max-width: 991px) {
+				display: none !important;
+			}
+		}
+	}
+	.banner-content {
+		h1 {
+			font-size: 60px;
+			color: $title-color;
+			line-height: 45px;
+			@media (max-width: 767px) {
+				line-height: 65px;
+			}
+		}
+		.hdng-1 {
+			font-weight: 300;
+			@media (max-width: 767px) {
+				margin-bottom: 15px;
+			}
+		}
+		p {
+			color: #555555;
+			max-width: 100%;
+			font-size: 18px;
+			margin: 40px 0;
+		}
+	}
+	.crsl-btns {
+		.primary-btn {
+			margin-right: 15px;
+			background: #fff;
+			color: $title-color;
+			padding: 0 50px;
+			border: 2px solid $title-color;
+			&:hover {
+				background: $primary-color2;
+				color: #fff;
+				border: 2px solid transparent;
+				box-shadow: none;
+			}
+			&.style-1 {
+				background: $primary-color2;
+				border: 2px solid transparent;
+				color: #fff;
+				@media (max-width: 420px) {
+					margin-bottom: 20px;
+				}
+				&:hover {
+					background: #fff;
+					color: $title-color;
+					border: 2px solid $title-color;
+				}
+			}
+		}
+	}
+}
+
+// =================================== //
+//  End Version Common Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version1 Banner Styles//
+// =================================== //
+
+.version1 {
+	.banner-area {
+		background: url(../img/banner/banner-bg.png) no-repeat center;
+		background-size: cover;
+		@media (max-width: 991px) {
+			background-position: left;
+		}
+	}
+}
+// =================================== //
+//  End Version1 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version2 Banner Styles//
+// =================================== //
+.version2,
+.version13 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg2.png) no-repeat center;
+		background-size: cover;
+	}
+}
+// =================================== //
+//  End Version2 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version3 Banner Styles//
+// =================================== //
+.version3 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg3.png) no-repeat center;
+		background-size: cover;
+	}
+}
+// =================================== //
+//  End Version3 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version4 Banner Styles//
+// =================================== //
+.version4 {
+	.banner-area {
+		// background: url(../img/banner/banner-bg4.png) no-repeat center;
+		background-size: cover;
+		.banner-content {
+			h1 {
+				color: $title-color;
+			}
+			p {
+				color: $text-color;
+			}
+			.primary-btn {
+				padding: 0 56px;
+				text-transform: uppercase;
+				margin-top: 15px;
+			}
+		}
+	}
+}
+// =================================== //
+//  End Version4 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version5 Banner Styles//
+// =================================== //
+.version5 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg5.png) no-repeat center;
+		background-size: cover;
+	}
+}
+// =================================== //
+//  End Version5 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version6 Banner Styles//
+// =================================== //
+.version6 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg6.png) no-repeat center;
+		background-size: cover;
+		.banner-content {
+			h1 {
+				color: $title-color;
+			}
+			p {
+				color: $text-color;
+			}
+			.video-popup {
+				.watch {
+					color: $title-color;
+				}
+			}
+		}
+	}
+}
+// =================================== //
+//  End Version6 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version7 Banner Styles//
+// =================================== //
+.version7 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg7.png) no-repeat center;
+		background-size: cover;
+	}
+}
+// =================================== //
+//  End Version7 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version8 Banner Styles//
+// =================================== //
+.version8 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg8.png) no-repeat center;
+		background-size: cover;
+	}
+}
+// =================================== //
+//  End Version8 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version9 Banner Styles//
+// =================================== //
+.version9 {
+	.banner-area {
+		overflow: hidden;
+		&:after {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			content: "";
+			background: #000;
+			z-index: -1;
+			opacity: 0.5;
+		}
+		.video-wraper {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			video {
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
+		}
+		.banner-content {
+			.primary-btn {
+				border: none;
+				padding: 0 50px;
+				background: $primary-color2;
+				@media (max-width: 1440px) {
+					padding: 0 42px;
+				}
+				@media (max-width: 1200px) {
+					padding: 0 30px;
+				}
+				&:hover {
+					background: #fff;
+					color: $title-color;
+					box-shadow: none;
+				}
+				&.style-1 {
+					margin-right: 15px;
+					background: #fff;
+					color: $title-color;
+					&:hover {
+						background: $primary-color2;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+// =================================== //
+//  End Version9 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version10 Banner Styles//
+// =================================== //
+.version10 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg10.png) no-repeat center;
+		background-size: cover;
+		.active-banner-carousel {
+			.owl-dots {
+				@media (max-width: 1440px) {
+					bottom: -25%;
+				}
+				@media (max-width: 767px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+.version10,
+.version15 {
+	.banner-area {
+		.banner-content {
+			@media (max-width: 1440px) {
+				margin-top: 0;
+			}
+			h1 {
+				font-size: 60px;
+				color: $title-color;
+				line-height: 45px;
+				@media (max-width: 1199px) {
+					line-height: 65px;
+				}
+				@media (max-width: 767px) {
+					line-height: 65px;
+				}
+				@media (max-width: 570px) {
+					font-size: 45px;
+				}
+			}
+			.hdng-1 {
+				font-weight: 300;
+				@media (max-width: 767px) {
+					margin-bottom: 10px;
+					font-size: 40px;
+				}
+			}
+			.hdng-2 {
+				@media (max-width: 767px) {
+					font-size: 45px;
+				}
+			}
+			.hdng-2 {
+				@media (max-width: 480px) {
+					line-height: 50px;
+				}
+			}
+			p {
+				color: #555555;
+				max-width: 100%;
+				font-size: 18px;
+				margin: 40px 0;
+			}
+		}
+	}
+}
+// =================================== //
+//  End Version10 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version11 Banner Styles//
+// =================================== //
+.version11 {
+	.banner-area {
+		&.owl-carousel {
+			.owl-dots {
+				left: 95%;
+				bottom: 50%;
+				button {
+					display: block;
+					background: #fff;
+					&.active {
+						background: $primary-color2;
+					}
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+		.single_slide_banner {
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.slide_bg1 {
+			//background: url(../img/banner/banner-bg-slide11.png);
+		}
+		.slide_bg2 {
+			//background: url(../img/banner/banner-bg-slide11.png);
+		}
+		.slide_bg3 {
+			//background: url(../img/banner/banner-bg-slide11.png);
+		}
+		.fullscreen {
+			@media (max-width: 991px) {
+				height: 600px !important;
+			}
+		}
+		.banner-content {
+			text-align: right;
+			@media (max-width: 1440px) and (min-width: 992px) {
+				margin-right: 100px;
+			}
+			@media (max-width: 991px) {
+				margin-top: 50px;
+				text-align: left;
+			}
+			h1 {
+				color: #fff;
+				@media (max-width: 991px) {
+					line-height: 50px;
+					font-size: 42px;
+					margin-bottom: 20px;
+				}
+				&.hdng-2 {
+					@media (max-width: 1440px) and (min-width: 992px) {
+						line-height: 65px;
+					}
+				}
+			}
+			p {
+				color: #fff;
+			}
+			.crsl-btns {
+				@media (max-width: 991px) {
+					margin-top: 50px;
+				}
+			}
+			.primary-btn {
+				background: $primary-color2;
+				border: 2px solid transparent;
+				color: #fff;
+				&:hover {
+					background: transparent;
+					border: 2px solid #fff;
+				}
+				&.style-1 {
+					background: transparent;
+					border: 2px solid #fff;
+					&:hover {
+						background: $primary-color2;
+						color: #fff;
+						border: 2px solid transparent;
+					}
+				}
+			}
+		}
+	}
+}
+// =================================== //
+//  End Version11 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version12 Banner Styles//
+// =================================== //
+.version12 {
+	.banner-area {
+		.banner-content {
+			@media (max-width: 991px) {
+				margin-top: 0px;
+			}
+		}
+		&.owl-carousel {
+			.owl-dots {
+				left: 95%;
+				bottom: 50%;
+				@media (max-width: 991px) {
+					display: none;
+				}
+				button {
+					display: block;
+					background: #fff;
+					&.active {
+						background: $primary-color2;
+					}
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+		.single_slide_banner {
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.slide_bg1 {
+			//background: url(../img/banner/banner-bg-slide12.png);
+		}
+		.slide_bg2 {
+			//background: url(../img/banner/banner-bg-slide12.png);
+		}
+		.slide_bg3 {
+			//background: url(../img/banner/banner-bg-slide12.png);
+		}
+		.fullscreen {
+			@media (max-width: 991px) {
+				height: 600px !important;
+			}
+		}
+		.banner-content {
+			text-align: left;
+			.hdng-1 {
+				color: $title-color;
+				font-size: 50px;
+				@media (max-width: 991px) {
+					font-size: 35px;
+				}
+			}
+			.hdng-2 {
+				color: $title-color;
+				font-size: 70px;
+				line-height: 80px;
+				br {
+					@media (max-width: 991px) {
+						display: none;
+					}
+				}
+				@media (max-width: 991px) {
+					font-size: 45px;
+					line-height: 50px;
+				}
+			}
+		}
+	}
+}
+// =================================== //
+//  End Version12 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version13 Banner Styles//
+// =================================== //
+.version13 {
+	.banner-device {
+		.video-popup {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include transform(translate(-50%, -50%));
+			@media (max-width: 991px) {
+				display: none !important;
+			}
+		}
+	}
+}
+.version13,
+.version14 {
+	.banner-area {
+		.fullscreen {
+			@media (max-width: 991px) {
+				height: 700px !important;
+			}
+		}
+
+		.banner-device {
+			margin-top: 250px;
+			@media (max-width: 1680px) {
+				margin-top: 100px;
+			}
+		}
+		.banner-content {
+			.crsl-btns {
+				margin-top: 50px;
+			}
+			.primary-btn {
+				line-height: 46px;
+				&.style-1 {
+					background: #ffffff;
+					color: $title-color;
+					border: 2px solid #fff;
+					&:hover {
+						background: transparent;
+						color: #ffffff;
+						border: 2px solid #ffffff;
+					}
+				}
+				&.style-2 {
+					background: transparent;
+					border: 2px solid #fff;
+					&:hover {
+						background: #ffffff;
+						color: $title-color;
+						border: 2px solid #ffffff;
+					}
+				}
+			}
+		}
+	}
+}
+// =================================== //
+//  End Version13 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  STart Version14 Banner Styles//
+// =================================== //
+.version14 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg14.png) no-repeat center;
+		background-size: cover;
+	}
+}
+// =================================== //
+//  End Version14 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version15 Banner Styles//
+// =================================== //
+.version15 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg15.png) no-repeat center;
+		background-size: cover;
+		background-position: top;
+		.banner-content {
+			margin-top: 550px;
+			@media (max-width: 1665px) {
+				margin-top: 420px;
+			}
+			@media (max-width: 991px) {
+				margin-top: 0px;
+			}
+			.hdng-1 {
+				@media (max-width: 1199px) {
+					line-height: 45px;
+				}
+			}
+			.primary-btn {
+				border: 0px;
+				&.style-1 {
+					line-height: 50px;
+				}
+				&.style-2 {
+					background: transparent;
+					border: 2px solid $primary-color2;
+					color: $title-color;
+					@media (max-width: 768px) {
+						color: #ffffff;
+					}
+				}
+			}
+		}
+		.banner-device {
+			@media (max-width: 1440px) {
+				margin-top: 30px;
+			}
+			img {
+				@media (max-width: 1665px) {
+					width: 60% !important;
+				}
+			}
+			.video-popup {
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				@media (max-width: 991px) {
+					display: none !important;
+				}
+			}
+		}
+	}
+}
+// =================================== //
+//  End Version15 Banner Styles//
+// =================================== //
+
+// =================================== //
+//  Start Version16 Banner Styles//
+// =================================== //
+.version16 {
+	.banner-area {
+		//background: url(../img/banner/banner-bg16.png) no-repeat center;
+		background-size: cover;
+		.banner-content {
+			text-align: left;
+			.hdng-1 {
+				color: $title-color;
+				font-size: 50px;
+				font-weight: 300;
+				margin-bottom: 5px;
+				@media (max-width: 991px) {
+					font-size: 35px;
+				}
+			}
+			.hdng-2 {
+				color: $title-color;
+				font-size: 50px;
+				line-height: 60px;
+				margin-bottom: 20px;
+				br {
+					@media (max-width: 991px) {
+						display: none;
+					}
+				}
+				@media (max-width: 991px) {
+					font-size: 45px;
+					line-height: 50px;
+				}
+			}
+			p {
+				color: $title-color;
+			}
+			.style-2 {
+				background: transparent;
+				color: $title-color;
+				border: 2px solid $title-color;
+			}
+		}
+		.banner-device {
+			margin-top: 450px;
+			@media (max-width: 1680px) {
+				margin-top: 100px;
+			}
+			.video-popup {
+				position: absolute;
+				top: 30%;
+				left: 55%;
+				@include transform(translate(-50%, -50%));
+				@media (max-width: 991px) {
+					display: none !important;
+				}
+			}
+		}
+	}
+}
+// =================================== //
+//  End Version16 Banner Styles//
+// =================================== //

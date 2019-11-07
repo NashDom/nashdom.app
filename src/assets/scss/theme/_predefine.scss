@@ -1,0 +1,317 @@
+// =================================== //
+//  Start Section Gap Styles//
+// =================================== //
+.section-gap {
+	padding: 150px 0;
+	@media (max-width: 991px) {
+		padding: 80px 0;
+	}
+}
+
+.section-gap-top {
+	padding-top: 150px;
+	@media (max-width: 991px) {
+		padding-top: 80px;
+	}
+}
+
+// =================================== //
+//  End Section Gap Styles//
+// =================================== //
+// =================================== //
+//  End Buttons Styles//
+// =================================== //
+.primary-btn {
+	line-height: 48px;
+	padding: 0 45px;
+	border-radius: 25px;
+	color: $white;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+	position: relative;
+	z-index: 2;
+	border: 1px solid transparent;
+	@include gradient2(
+    to right,
+    $primary-color2 0%,
+    $primary-color 51%,
+    $primary-color2 100%
+  );
+	cursor: pointer;
+	background-size: 200% auto;
+	background-origin: border-box;
+	@include transition();
+	&:focus {
+		outline: none;
+	}
+	span {
+		margin-left: 10px;
+		font-weight: 500;
+		left: 0;
+		position: relative;
+		@include transition();
+	}
+	&:hover {
+		color: $white;
+		box-shadow: 0px 10px 30px 0 rgba(124, 33, 255, 0.3);
+		background-position: right center;
+		span {
+			left: 5px;
+		}
+	}
+	&.gray {
+		background: #f9f9f9;
+		color: $title-color;
+		&:hover {
+			color: $white;
+			@extend .gradient-bg;
+		}
+	}
+}
+.playstore-btns {
+	.primary-btn {
+		position: relative;
+		background: $white;
+		border: 1px solid #cccccc;
+		border-radius: 5px;
+		padding: 5px 38px;
+		@include transition(0.5s);
+		span {
+			position: absolute;
+			left: 30px;
+			top: 50%;
+			font-size: 40px;
+			transform: translateY(-50%);
+			color: #cccccc;
+			@include transition();
+		}
+		h4 {
+			padding-left: 45px;
+			padding-bottom: 10px;
+			margin-top: 10px;
+			@include transition();
+		}
+		p {
+			font-size: 12px;
+			color: #cccccc;
+			padding-left: 45px;
+			line-height: 0px;
+			@include transition();
+		}
+		&:hover {
+			border: 1px solid transparent;
+			box-shadow: 0px 10px 30px 0 rgba(241, 61, 128, 0.3);
+			@extend .gradient-bg-2;
+			h4 {
+				color: $white;
+			}
+			p {
+				color: $white;
+			}
+			span {
+				color: $white;
+			}
+		}
+	}
+}
+// =================================== //
+// End Buttons Styles//
+// =================================== //
+// =================================== //
+// Start Section Title and Content Styles//
+// =================================== //
+.section-title {
+	margin-bottom: 100px;
+	@media (max-width: 991px) {
+		margin-bottom: 50px;
+	}
+	.lines {
+		height: 2px;
+		width: 50px;
+		text-align: center;
+		background: #8e42f7;
+		display: inline-block;
+		position: relative;
+		top: -16px;
+		&:before {
+			position: absolute;
+			left: -30px;
+			top: 5px;
+			height: 2px;
+			width: 50px;
+			background: #8e42f7;
+			content: "";
+		}
+		&:after {
+			position: absolute;
+			right: -30px;
+			top: 5px;
+			height: 2px;
+			width: 50px;
+			background: #8e42f7;
+			content: "";
+		}
+	}
+	h2 {
+		margin: 0px 0px 20px;
+		@media (max-width: 767px) {
+			font-size: 25px;
+		}
+	}
+	p {
+		margin: 0;
+	}
+}
+// =================================== //
+// End Section Title and Content Styles//
+// =================================== //
+// =================================== //
+// Start Video Play Styles//
+// =================================== //
+.video-play-button {
+	position: relative;
+	box-sizing: content-box;
+	display: inline-block;
+	width: 32px;
+	height: 44px;
+	border-radius: 50%;
+	padding: 20px 8px 18px 28px;
+	border: 0px;
+	cursor: pointer;
+	background: transparent;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		@include transform(translate(-50%, -50%));
+		display: block;
+		width: 60px;
+		height: 60px;
+		@extend .gradient-bg-2;
+		border-radius: 50%;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+	&:before {
+		z-index: 0;
+		@include animation(pulse-border 2000ms ease-out infinite);
+	}
+	&:after {
+		z-index: 1;
+		@include transition(all 200ms ease);
+		box-shadow: 0px 10px 30px rgba(39, 0, 110, 0.3);
+	}
+	span {
+		display: block;
+		position: relative;
+		z-index: 3;
+		width: 0;
+		height: 0;
+		border-left: 16px solid #ffffff;
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+	}
+	&:hover {
+		&:after {
+			background-color: darken($primary-color, 30%);
+		}
+	}
+}
+@include keyframes(pulse-border) {
+	0% {
+		@include transform(translate(-50%, -50%) translateZ(0) scale(1));
+		opacity: 0.7;
+	}
+	100% {
+		@include transform(translate(-50%, -50%) translateZ(0) scale(1.5));
+		opacity: 0.1;
+	}
+}
+// =================================== //
+// End Video Play Styles//
+// =================================== //
+// =================================== //
+// Start Owl Nav Styles//
+// =================================== //
+.owl-nav {
+	@include flexbox();
+	@include flex-direction(column);
+	position: absolute;
+	@include transform(translateY(-50%));
+	@media (max-width: 1199px) {
+		display: none !important;
+	}
+	.owl-prev,
+	.owl-next {
+		&:focus {
+			box-shadow: none;
+			outline: none;
+		}
+		img {
+			@include filter(grayscale(100%));
+			@include transition();
+		}
+		&:hover {
+			img {
+				@include filter(grayscale(0%));
+			}
+		}
+	}
+}
+// =================================== //
+// End Owl Nav Styles//
+// =================================== //
+// =================================== //
+// Start Progress Bar Styles//
+// =================================== //
+progress[value] {
+	position: fixed;
+	top: 82px;
+	z-index: 9999;
+	border: none;
+	height: 6px;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	appearance: none;
+	@media (max-width: 991px) {
+		top: 70px;
+	}
+}
+progress::-webkit-progress-value {
+	background: $title-color;
+}
+progress::-webkit-progress-bar {
+	background: transparent;
+}
+// =================================== //
+// End Progress Bar Styles//
+// =================================== //
+// =================================== //
+// Start Box Shadow Styles//
+// =================================== //
+.img-box-shadow {
+	@include filter(drop-shadow(-30px 20px 35px rgba(0, 0, 0, 0.5)));
+}
+// =================================== //
+// End Box Shadow Styles//
+// =================================== //
+// React Carousel
+.carousel .slide {
+	background: transparent !important;
+}
+.carousel .thumb {
+	border: 0px !important;
+	margin-right: 30px !important;
+}
+// Video Modal
+.modal-video-close-btn {
+	cursor: pointer !important;
+}

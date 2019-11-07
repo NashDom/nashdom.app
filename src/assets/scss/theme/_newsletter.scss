@@ -1,0 +1,72 @@
+// =================================== //
+//  Start Newsletter Styles//
+// =================================== //
+.newsletter-area {
+	margin-bottom: 45px;
+	@media (max-width: 991px) {
+		margin-bottom: 0px;
+	}
+	.about-left-content {
+		padding: 50px 90px 62px;
+		@media (max-width: 991px) {
+			padding: 50px 20px;
+		}
+		@media (max-width: 375px) {
+			padding: 50px 10px;
+		}
+		.section-title {
+			margin-bottom: 35px;
+			text-align: center !important;
+			h2 {
+				margin: 20px 0 10px;
+			}
+		}
+	}
+	.about-right-content {
+		background: url(../img/newsletter-bg.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.subscribe-form {
+		input.common-input {
+			width: 100%;
+			line-height: 58px;
+			padding: 0 20px;
+			border-radius: 50px;
+			border: 1px solid #eeeeee;
+			&:focus {
+				outline: none;
+			}
+			@include placeholder {
+				font-size: 14px;
+				color: $text-color;
+			}
+		}
+		.primary-btn {
+			line-height: 38px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			font-family: $title-font;
+			padding: 0px 22px;
+			box-shadow: 0px 10px 30px 0 rgba(124, 33, 255, 0.3);
+			&:hover {
+				box-shadow: none;
+			}
+			@media (max-width: 375px) {
+				right: 5px;
+			}
+		}
+	}
+	.about-right-content {
+		padding: 60px 190px;
+		top: 22%;
+		height: 87%;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+
+// =================================== //
+//  End Newsletter Styles//
+// =================================== //

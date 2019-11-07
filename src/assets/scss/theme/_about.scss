@@ -1,0 +1,79 @@
+// =================================== //
+//  Start About Styles//
+// =================================== //
+.about-area {
+	margin-top: 150px;
+	@media (max-width: 991px) {
+		margin-top: 50px;
+	}
+}
+
+.about-left-content {
+	background: $white;
+	z-index: 10;
+	position: relative;
+	padding: 100px 75px;
+	box-shadow: 0px 20px 50px 0 rgba(0, 0, 0, 0.1);
+	@media (max-width: 575px) {
+		padding: 20px;
+	}
+	.section-title {
+		margin-bottom: 0;
+		text-align: left !important;
+		background: $white;
+		.lines {
+			margin-left: 31px;
+		}
+	}
+	.playstore-btns {
+		margin-top: 20px;
+		.primary-btn {
+			@media (max-width: 1024px) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+.about-right-content {
+	// background: url(../img/video-bg.jpg) no-repeat center;
+	// background-size: cover;
+	position: absolute;
+	right: 0;
+	top: -9%;
+	height: 117%;
+	width: 53%;
+	z-index: 1;
+	text-align: center;
+	@media (max-width: 767px) {
+		position: relative;
+		right: 0;
+		top: 50px;
+		height: 250px;
+		width: 100%;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		position: relative;
+		right: 0;
+		top: 20px;
+		height: 350px;
+		width: 100%;
+	}
+	.overlay-bg {
+		@include gradient(0deg, $primary-color2, $primary-color);
+		opacity: 0.85;
+	}
+	.video-popup {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		@include transform(translate(-50%, -50%));
+		p {
+			color: $white;
+		}
+	}
+}
+
+// =================================== //
+//  End About Styles //
+// =================================== //

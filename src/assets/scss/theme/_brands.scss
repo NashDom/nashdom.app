@@ -1,0 +1,37 @@
+// =================================== //
+//  Start Brands Styles//
+// =================================== //
+.brand-area {
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
+
+.single-brand-item {
+	background: $offwhite;
+	width: 170px;
+	height: 130px;
+	text-align: center;
+	margin: auto;
+	@include transition();
+	.d-table-cell {
+		vertical-align: middle;
+	}
+	img {
+		width: auto !important;
+		margin: auto;
+		@include filter(grayscale(100%));
+		cursor: pointer;
+		@include transition();
+	}
+	&:hover {
+		background: $white;
+		img {
+			@include filter(grayscale(0%));
+		}
+	}
+}
+
+// =================================== //
+//  End Brands Styles//
+// =================================== //

@@ -1,0 +1,104 @@
+/* =================================== */
+
+/*  Footer Styles
+/* =================================== */
+
+.footer-area {
+    background: $title-color;
+    padding: 100px 0px;
+    @media (max-width: 991px) {
+        padding: 50px 0px;
+    }
+}
+
+.single-footer-widget {
+    h4 {
+        color: $white;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    .footer-lists {
+        padding-bottom: 30px;
+        @media (max-width: 991px) {
+            padding-bottom: 20px;
+        }
+        li {
+            padding-bottom: 10px;
+            a {
+                color: $text-color;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.footer-logo {
+    position: relative;
+    overflow: hidden;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 160px;
+        top: 16px;
+        height: 1px;
+        width: 100%;
+        background: #333333;
+    }
+}
+
+.copyright-area {
+    @media (max-width: 767px) {
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+    }
+    padding-top: 25px;
+    .copy-right-text {
+        margin-top: 20px;
+        @media (max-width: 767px) {
+            margin-bottom: 0;
+        }
+        a {
+            color: $white;
+            &:hover {
+                color: $primary-color2;
+            }
+        }
+    }
+    .playstore-btns {
+        text-align: right;
+        @media (max-width: 767px) {
+            text-align: left;
+        }
+        .primary-btn {
+            @media (max-width: 472px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .primary-btn {
+        background: transparent;
+        border-color: #333333 !important;
+        h4 {
+            color: $white !important;
+        }
+        span {
+            color: #444;
+        }
+        p {
+            color: #6d6d6d;
+        }
+        &:hover {
+            @extend .gradient-bg-2;
+            span {
+                color: $white;
+            }
+            p {
+                color: $white;
+            }
+        }
+    }
+}
+
+/*-------- end footer Area -------------*/

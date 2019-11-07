@@ -1,0 +1,117 @@
+// =================================== //
+//  Start Pricing Styles//
+// =================================== //
+.pricing-area {
+}
+
+.pricing {
+	.col-lg-3 {
+		padding: 0;
+		&:last-child {
+			.single-pricing {
+				border-right: none;
+			}
+		}
+	}
+}
+
+.single-pricing {
+	border-right: 1px dashed #ddd;
+	@include transition();
+	@media (max-width: 991px) {
+		margin-bottom: 30px;
+	}
+	.pricing-head {
+		padding: 50px;
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid #f4f1f8;
+		@include transition();
+		@media (max-width: 1199px) {
+			padding: 50px 20px;
+		}
+		h4 {
+			margin-bottom: 15px;
+		}
+		.primary-btn {
+			margin-top: 30px;
+		}
+		h2 {
+			margin-top: 40px;
+			span {
+				font-size: 16px;
+			}
+		}
+		&:after {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			content: "";
+			border-top: 4px solid transparent;
+			@include border-gradient(90deg, $primary-color2, $primary-color);
+			border-image-slice: 1;
+			opacity: 0;
+			visibility: hidden;
+			@include transition();
+			@media (max-width: 575px) {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	.pricing-content {
+		background: $offwhite;
+		padding-bottom: 50px;
+		min-height: 482px;
+		.pricing-lists {
+			li {
+				border-bottom: 1px dashed #dddddd;
+				padding: 15px 50px;
+				@media (max-width: 575px) {
+					padding: 15px 20px;
+				}
+			}
+		}
+		.primary-btn {
+			margin: 40px 0px 0px 50px;
+			background: $white;
+			color: $title-color;
+			font-family: $title-font;
+			background-origin: border-box !important;
+		}
+	}
+	&.active,
+	&:hover {
+		box-shadow: 0px 20px 50px 0 rgba(105, 0, 255, 0.1);
+		background: $white;
+		position: relative;
+		z-index: 10;
+		.pricing-head {
+			border-bottom: 4px solid transparent;
+			&:after {
+				opacity: 1;
+				visibility: visible;
+			}
+			.primary-btn {
+				@extend .gradient-bg;
+				box-shadow: 0px 10px 30px 0 rgba(124, 33, 255, 0.3);
+				color: $white;
+			}
+			h2 {
+				@extend .gradient-text-color;
+			}
+		}
+		.pricing-content {
+			.primary-btn {
+				box-shadow: 0px 10px 30px 0 rgba(124, 33, 255, 0.3);
+				@extend .gradient-bg;
+				color: $white;
+			}
+		}
+	}
+}
+
+// =================================== //
+//  End Pricing Styles//
+// =================================== //

@@ -1,0 +1,104 @@
+// =================================== //
+//  Start Screenshot Styles//
+// =================================== //
+.screenshots-area {
+	position: relative;
+	margin: 50px 0 -170px;
+	@media (max-width: 991px) {
+		margin: 60px 0 80px;
+	}
+	.about-left-content {
+		box-shadow: none;
+		.section-title {
+			background: $white !important;
+			p {
+				max-width: 400px;
+			}
+		}
+		padding: 0;
+		background: $white !important;
+	}
+	.right-side-content {
+	}
+	.screenshots-bg {
+		position: absolute;
+		right: -4.2%;
+		top: 49%;
+		@include transform(translate(-50%, -50%));
+		@media (max-width: 1665px) {
+			right: -12%;
+		}
+		@media (max-width: 1440px) {
+			right: -10%;
+			width: 40%;
+		}
+		@media (max-width: 1199px) {
+			display: none;
+		}
+	}
+}
+
+.screenshots-carousel {
+	margin-left: 80px;
+	@media (max-width: 767px) {
+		margin-left: 0px;
+	}
+	.carousel {
+		.control-prev.control-arrow,
+		.control-next.control-arrow {
+			opacity: 1;
+			&:before {
+				background: url(../img/prev.png) no-repeat;
+				min-height: 30px;
+				width: 100px;
+				border: 0px;
+				@include transition();
+				@include filter(grayscale(100%));
+			}
+			&:hover {
+				&:before {
+					@include filter(grayscale(0%));
+				}
+			}
+		}
+		.control-prev.control-arrow {
+			@media (max-width: 1199px) {
+				left: -28px;
+			}
+			&:before {
+				background: url(../img/prev.png) no-repeat;
+			}
+		}
+		.control-next.control-arrow {
+			@media (max-width: 1199px) {
+				right: -48px;
+			}
+			&:before {
+				background: url(../img/next.png) no-repeat;
+			}
+		}
+		&.carousel-slider .control-arrow {
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+	.single-screenshots {
+		text-align: center;
+		padding: 110px 0px;
+		@media (max-width: 991px) {
+			padding: 0px;
+		}
+		img {
+			width: auto !important;
+			display: inline-block;
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+}
+
+// =================================== //
+//  End Screenshot Styles//
+// =================================== //

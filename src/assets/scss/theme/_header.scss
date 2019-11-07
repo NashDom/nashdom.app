@@ -1,0 +1,360 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+    padding: 11px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    @include transition(all 0.5s);
+    z-index: 997;
+    background: transparent;
+    .logo2 {
+        display: none;
+    }
+    &.header-scrolled {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        background: #ffffff !important;
+        box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+        .logo1 {
+            display: none;
+        }
+        .logo2 {
+            display: block;
+        }
+        .nav-item {
+            .nav-link {
+                color: $title-color;
+                @media (max-width: 991px) {
+                    color: $white;
+                }
+                &.primary-btn {
+                    border: 1px solid $title-color;
+                }
+            }
+        }
+    }
+    .nav-item {
+        &.dropdown {
+            .dropdown-menu {
+                padding: 10px;
+                border-radius: 0px;
+                margin-top: 18px;
+                max-height: 0;
+                display: block;
+                overflow: hidden;
+				opacity: 0;
+				visibility: hidden;
+                @include transition(all 0.5s ease-in-out);
+            }
+            .dropdown-item {
+                cursor: pointer;
+                padding: 4px 10px;
+                color: $title-color;
+                display: block;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                background: transparent;
+                @include transition(0.3s);
+                &:last-child {
+                    border-bottom: 0px;
+                }
+                &:hover {
+                    color: $primary-color2;
+                }
+            }
+            &:hover {
+                .dropdown-menu {
+                    max-height: 200px;
+					opacity: 1;
+					visibility: visible;
+                }
+            }
+        }
+        .nav-link {
+            padding: 8px 16px;
+            text-decoration: none;
+            display: inline-block;
+            color: $white;
+            font-weight: 500;
+            font-family: $title-font;
+            font-size: 12px;
+            text-transform: uppercase;
+            outline: none;
+            @include transition(all 0.3s);
+            &:hover {
+                color: $primary-color2;
+            }
+            &.primary-btn {
+                padding: 0px 33px;
+                background: $white;
+                color: $title-color;
+                line-height: 38px;
+                @media (max-width: 991px) {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .navbar-collapse {
+        @media (max-width: 991px) {
+            background: $title-color;
+            padding: 10px 10px 25px;
+            margin-top: 20px;
+        }
+    }
+    .navbar-toggler {
+        padding: 0px;
+        cursor: pointer;
+        background: url(../img/nav.png) no-repeat;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+.version4,
+.version10,
+.version15 {
+    #header {
+        .nav-menu {
+            li {
+                a {
+                    color: $title-color;
+                    &.primary-btn {
+                        @extend .gradient-bg;
+                        border: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .nav-menu li:hover>a,
+    .menu-active,
+    .parent-active>.sf-with-ul {
+        color: $primary-color2 !important;
+    }
+}
+
+.version16 {
+    #header {
+        .nav-menu {
+            li {
+                a {
+                    color: $title-color;
+                    &.primary-btn {
+                        background: #ffffff;
+                        border: none;
+                        color: $title-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-menu li:hover>a,
+.menu-active,
+.parent-active>.sf-with-ul {
+    color: $primary-color4 !important;
+}
+
+.nav-menu ul ul {
+    margin: 0;
+}
+
+/* Mobile Nav Toggle */
+
+#mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    z-index: 999;
+    top: 16px;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    display: none;
+    @include transition(all 0.4s);
+    outline: none;
+    cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+    color: #000000;
+    font-weight: 900;
+}
+
+.version4,
+.version10,
+.version15 {
+    #mobile-nav-toggle i {
+        color: $title-color;
+    }
+}
+
+@media (max-width: 991px) {
+    #mobile-nav-toggle {
+        display: inline;
+    }
+    #nav-menu-container {
+        display: none;
+    }
+}
+
+/* Mobile Nav Styling */
+
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    padding-top: 18px;
+    bottom: 0;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.8);
+    left: -260px;
+    width: 260px;
+    overflow-y: auto;
+    @include transition(0.4s);
+    .primary-btn {
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+#mobile-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#mobile-nav ul li {
+    position: relative;
+}
+
+#mobile-nav ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 10px 22px 10px 15px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    outline: none;
+    font-weight: 400;
+}
+
+#mobile-nav ul li a:hover {
+    color: #fff;
+}
+
+#mobile-nav ul li li {
+    padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+    color: $primary-color;
+}
+
+#mobile-nav ul .menu-has-children li a {
+    text-transform: capitalize;
+}
+
+#mobile-nav ul .menu-item-active {
+    color: $primary-color;
+}
+
+#mobile-body-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+/* Mobile Nav body classes */
+
+body.mobile-nav-active {
+    overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+    left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+    color: #fff;
+}
+
+// Version 12 Navbar
+.version12 {
+    #header {
+        background: transparent !important;
+        padding-bottom: 0px;
+        &.header-scrolled {
+            padding-top: 0px;
+            background: #ffffff !important;
+            box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+            .header-12 {
+                box-shadow: none;
+                padding: 20px 50px;
+                @media (max-width: 991px) {
+                    padding: 20px 0px;
+                }
+            }
+        }
+        .header-12 {
+            background: #ffffff;
+            padding: 9px 50px;
+            box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+            @media (max-width: 991px) {
+                background: transparent;
+                padding: 0px 0px 20px;
+                box-shadow: none;
+            }
+        }
+        .nav-menu {
+            li {
+                a {
+                    &.primary-btn {
+                        background: $primary-color2;
+                        color: #ffffff;
+                        border: 1px solid $primary-color2;
+                        @media (max-width: 1199px) {
+                            margin-left: 25px;
+                        }
+                        &:hover {
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+            a {
+                color: $title-color;
+            }
+        }
+    }
+}

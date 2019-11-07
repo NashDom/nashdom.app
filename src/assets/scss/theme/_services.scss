@@ -1,0 +1,91 @@
+// =================================== //
+//  Start Services Styles//
+// =================================== //
+.service-area {
+	padding-top: 190px;
+	@media (max-width: 991px) {
+		padding-top: 110px;
+	}
+	.round-img {
+		position: absolute;
+		left: 0;
+		top: 16%;
+		z-index: -1;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+
+.service-shapes {
+	.shape {
+		position: absolute;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+	.shape1 {
+		bottom: 57%;
+		left: 7%;
+	}
+	.shape2 {
+		bottom: 16%;
+		left: 10%;
+	}
+	.shape3 {
+		bottom: 57%;
+		left: 0%;
+	}
+	.shape4 {
+		bottom: 77%;
+		left: 11%;
+	}
+	.shape5 {
+		bottom: 33%;
+		left: 1%;
+	}
+	.shape6 {
+		bottom: 4%;
+		left: 2%;
+	}
+	.shape7 {
+		bottom: 35%;
+		left: 10%;
+	}
+	.shape8 {
+		bottom: 40%;
+		left: 15%;
+	}
+}
+
+.service-left {
+	text-align: left;
+	img {
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+
+.service-right {
+	.single-features {
+		background: transparent;
+		box-shadow: none;
+		padding: 0 30px 0 0;
+		@media (max-width: 991px) {
+			padding: 0;
+		}
+		.features-icon {
+			background: $offwhite;
+		}
+		&:hover {
+			.features-icon {
+				@include gradient(90deg, $primary-color2 0%, $primary-color 100%);
+			}
+		}
+	}
+}
+
+// =================================== //
+//  End Services Styles //
+// =================================== //
