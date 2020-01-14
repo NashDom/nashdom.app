@@ -97,7 +97,7 @@ class Header extends Component {
 									</Nav>
 									<Nav className="ml-auto" navbar>
 										<NavItem>
-											<NavLink className="primary-btn" to="#">
+											<NavLink className="primary-btn" href="https://apps.apple.com/ru/app/%D0%BC%D0%B8%D1%80-16/id1391541605">
 												Скачать приложение
 										</NavLink>
 										</NavItem>
