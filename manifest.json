@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
  "name": "NashDom",
  "icons": [
   {
@@ -39,3 +40,19 @@
   }
  ]
 }
+=======
+  "short_name": "NashDom",
+  "name": "Nash Dom App",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+>>>>>>> 42cd51b12e390ab689c47767937ba45c2fb0a19b
