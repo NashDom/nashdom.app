@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
  "name": "NashDom",
  "icons": [
   {
@@ -40,7 +39,6 @@
   }
  ]
 }
-=======
   "short_name": "NashDom",
   "name": "Nash Dom App",
   "icons": [
@@ -55,4 +53,3 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
->>>>>>> 42cd51b12e390ab689c47767937ba45c2fb0a19b
